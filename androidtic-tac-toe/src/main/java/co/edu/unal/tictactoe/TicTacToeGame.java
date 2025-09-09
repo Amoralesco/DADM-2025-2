@@ -8,13 +8,14 @@ public class TicTacToeGame {
     public static final char COMPUTER_PLAYER = 'O';
     public static final char OPEN_SPOT = ' ';
 
-    private char mBoard[] = new char[9];
-    private final int BOARD_SIZE = 9;
+    private char mBoard[];
+    public static final int BOARD_SIZE = 9;
     private Random mRand;
 
     // Constructor
     public TicTacToeGame() {
         mRand = new Random();
+    mBoard = new char[BOARD_SIZE];
     }
 
     public void clearBoard() {

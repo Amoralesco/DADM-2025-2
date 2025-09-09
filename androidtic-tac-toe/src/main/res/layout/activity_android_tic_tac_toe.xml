@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#303030">
+
+    <TableLayout
+        android:id="@+id/play_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:stretchColumns="*">
+
+        <!-- Fila 1 -->
+        <TableRow android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_selector"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                android:layout_margin="6dp"
+                android:minWidth="100dp"
+                android:minHeight="100dp"
+                android:padding="8dp"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_selector"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                android:layout_margin="6dp"
+                android:minWidth="100dp"
+                android:minHeight="100dp"
+                android:padding="8dp"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_selector"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                android:layout_margin="6dp"
+                android:minWidth="100dp"
+                android:minHeight="100dp"
+                android:padding="8dp"
+                android:textColor="#FFFFFF" />
+        </TableRow>
+
+        <!-- Fila 2 -->
+        <TableRow android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_selector"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                android:layout_margin="6dp"
+                android:minWidth="100dp"
+                android:minHeight="100dp"
+                android:padding="8dp"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_selector"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                android:layout_margin="6dp"
+                android:minWidth="100dp"
+                android:minHeight="100dp"
+                android:padding="8dp"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/six"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_selector"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                android:layout_margin="6dp"
+                android:minWidth="100dp"
+                android:minHeight="100dp"
+                android:padding="8dp"
+                android:textColor="#FFFFFF" />
+        </TableRow>
+
+        <!-- Fila 3 -->
+        <TableRow
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/seven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_selector"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                android:layout_margin="6dp"
+                android:minWidth="100dp"
+                android:minHeight="100dp"
+                android:padding="8dp"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/eight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_selector"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                android:layout_margin="6dp"
+                android:minWidth="100dp"
+                android:minHeight="100dp"
+                android:padding="8dp"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/nine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_selector"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                android:layout_margin="6dp"
+                android:minWidth="100dp"
+                android:minHeight="100dp"
+                android:padding="8dp"
+                android:textColor="#FFFFFF" />
+        </TableRow>
+    </TableLayout>
+
+    <!-- Estado del juego -->
+    <TextView
+        android:id="@+id/information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="Turno"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF" />
+
+    <!-- Contadores: victorias/derrotas/empates -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/score_you"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tú: 0"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="16dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/score_android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android: 0"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="16dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/score_ties"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Empates: 0"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <!-- Botón para nueva partida -->
+    <Button
+        android:id="@+id/new_game_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Nueva partida"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:background="@drawable/button_selector"
+        android:textColor="#FFFFFF" />
+</LinearLayout>

@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.DADM20252" parent="Theme.Material3.DayNight">
+        <!-- Forzar paleta gris/oscura para evitar acentos rosa -->
+    <item name="android:colorBackground">@color/gray_800</item>
+    <item name="android:textColor">@color/white</item>
+    <item name="colorPrimary">@color/gray_500</item>
+    <item name="colorOnPrimary">@color/white</item>
+    <item name="colorPrimaryVariant">@color/gray_600</item>
+    <item name="colorSecondary">@color/gray_500</item>
+    <item name="colorOnSecondary">@color/white</item>
+    <item name="colorSurface">@color/gray_700</item>
+    <item name="colorOnSurface">@color/white</item>
+    <item name="android:navigationBarColor">@color/gray_800</item>
+    </style>
+
+    <style name="Theme.DADM20252" parent="Base.Theme.DADM20252" />
+</resources>

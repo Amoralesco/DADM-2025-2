@@ -22,3 +22,4 @@ dependencyResolutionManagement {
 rootProject.name = "DADM-2025-2"
 include(":app")
 include(":reto0")
+include(":androidtic-tac-toe")
